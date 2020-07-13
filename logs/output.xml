@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.7.8 on linux)" generated="20200713 14:10:12.783" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.7.8 on linux)" generated="20200713 14:17:40.000" rpa="false">
 <suite id="s1" name="Tests" source="/home/wendy/Área de Trabalho/JavaScript/RoboWeek 2a Edição/NinjaChef/tests">
 <suite id="s1-s1" name="Cadastro-Usuario" source="/home/wendy/Área de Trabalho/JavaScript/RoboWeek 2a Edição/NinjaChef/tests/cadastro-usuario.robot">
 <test id="s1-s1-t1" name="Cadastro Simples">
@@ -10,10 +10,10 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200713 14:10:12.988" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200713 14:10:12.988" endtime="20200713 14:10:14.589"></status>
+<msg timestamp="20200713 14:17:40.254" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200713 14:17:40.254" endtime="20200713 14:17:42.010"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:12.988" endtime="20200713 14:10:14.590"></status>
+<status status="PASS" starttime="20200713 14:17:40.253" endtime="20200713 14:17:42.010"></status>
 </kw>
 <kw name="Dado que acesso a página principal" library="kws">
 <kw name="Go To" library="SeleniumLibrary">
@@ -21,10 +21,10 @@
 <arguments>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:14.591" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
-<status status="PASS" starttime="20200713 14:10:14.591" endtime="20200713 14:10:17.152"></status>
+<msg timestamp="20200713 14:17:42.012" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
+<status status="PASS" starttime="20200713 14:17:42.012" endtime="20200713 14:17:43.954"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:14.590" endtime="20200713 14:10:17.154"></status>
+<status status="PASS" starttime="20200713 14:17:42.011" endtime="20200713 14:17:43.954"></status>
 </kw>
 <kw name="Quando submeto o meu email &quot;wendyufpb@gmail.com&quot;" library="kws">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -33,26 +33,26 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:17.160" level="INFO">Typing text 'wendyufpb@gmail.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20200713 14:10:17.158" endtime="20200713 14:10:17.482"></status>
+<msg timestamp="20200713 14:17:43.962" level="INFO">Typing text 'wendyufpb@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200713 14:17:43.959" endtime="20200713 14:17:44.273"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BOTAO_ENTRAR}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:17.483" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
-<status status="PASS" starttime="20200713 14:10:17.482" endtime="20200713 14:10:17.558"></status>
+<msg timestamp="20200713 14:17:44.275" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
+<status status="PASS" starttime="20200713 14:17:44.274" endtime="20200713 14:17:44.356"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200713 14:10:22.559" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200713 14:10:17.559" endtime="20200713 14:10:22.560"></status>
+<msg timestamp="20200713 14:17:49.358" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200713 14:17:44.357" endtime="20200713 14:17:49.358"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:17.156" endtime="20200713 14:10:22.561"></status>
+<status status="PASS" starttime="20200713 14:17:43.955" endtime="20200713 14:17:49.360"></status>
 </kw>
 <kw name="Então devo ser autenticado" library="kws">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -60,18 +60,23 @@
 <arguments>
 <arg>${DIV_DASH}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 14:10:22.562" endtime="20200713 14:10:22.600"></status>
+<status status="PASS" starttime="20200713 14:17:49.366" endtime="20200713 14:17:49.444"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:22.561" endtime="20200713 14:10:22.600"></status>
+<status status="PASS" starttime="20200713 14:17:49.362" endtime="20200713 14:17:49.445"></status>
 </kw>
 <kw name="Close Session" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200713 14:17:49.853" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200713 14:17:49.450" endtime="20200713 14:17:49.853"></status>
+</kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200713 14:10:22.602" endtime="20200713 14:10:22.666"></status>
+<status status="PASS" starttime="20200713 14:17:49.853" endtime="20200713 14:17:49.920"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:22.601" endtime="20200713 14:10:22.666"></status>
+<status status="PASS" starttime="20200713 14:17:49.448" endtime="20200713 14:17:49.920"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:12.987" endtime="20200713 14:10:22.667" critical="yes"></status>
+<status status="PASS" starttime="20200713 14:17:40.252" endtime="20200713 14:17:49.921" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="Email Incorreto">
 <kw name="Open Session" library="base" type="setup">
@@ -81,10 +86,10 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200713 14:10:22.671" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200713 14:10:22.670" endtime="20200713 14:10:24.283"></status>
+<msg timestamp="20200713 14:17:49.929" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200713 14:17:49.926" endtime="20200713 14:17:51.696"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:22.670" endtime="20200713 14:10:24.285"></status>
+<status status="PASS" starttime="20200713 14:17:49.924" endtime="20200713 14:17:51.697"></status>
 </kw>
 <kw name="Dado que acesso a página principal" library="kws">
 <kw name="Go To" library="SeleniumLibrary">
@@ -92,10 +97,10 @@
 <arguments>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:24.289" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
-<status status="PASS" starttime="20200713 14:10:24.288" endtime="20200713 14:10:26.486"></status>
+<msg timestamp="20200713 14:17:51.698" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
+<status status="PASS" starttime="20200713 14:17:51.698" endtime="20200713 14:17:53.379"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:24.287" endtime="20200713 14:10:26.487"></status>
+<status status="PASS" starttime="20200713 14:17:51.697" endtime="20200713 14:17:53.380"></status>
 </kw>
 <kw name="Quando submeto o meu email &quot;wendyufpb&amp;gmail.com&quot;" library="kws">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -104,26 +109,26 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:26.493" level="INFO">Typing text 'wendyufpb&amp;gmail.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20200713 14:10:26.491" endtime="20200713 14:10:26.842"></status>
+<msg timestamp="20200713 14:17:53.386" level="INFO">Typing text 'wendyufpb&amp;gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200713 14:17:53.385" endtime="20200713 14:17:53.735"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BOTAO_ENTRAR}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:26.843" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
-<status status="PASS" starttime="20200713 14:10:26.842" endtime="20200713 14:10:26.922"></status>
+<msg timestamp="20200713 14:17:53.735" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
+<status status="PASS" starttime="20200713 14:17:53.735" endtime="20200713 14:17:53.840"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200713 14:10:31.924" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200713 14:10:26.923" endtime="20200713 14:10:31.924"></status>
+<msg timestamp="20200713 14:17:58.841" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200713 14:17:53.840" endtime="20200713 14:17:58.841"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:26.489" endtime="20200713 14:10:31.925"></status>
+<status status="PASS" starttime="20200713 14:17:53.383" endtime="20200713 14:17:58.842"></status>
 </kw>
 <kw name="Então devo ver a mensagem &quot;Oops. Informe um email válido!&quot;" library="kws">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -132,18 +137,23 @@
 <arg>${DIV_ALERT}</arg>
 <arg>${expect_message}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 14:10:31.927" endtime="20200713 14:10:31.966"></status>
+<status status="PASS" starttime="20200713 14:17:58.844" endtime="20200713 14:17:58.903"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:31.926" endtime="20200713 14:10:31.967"></status>
+<status status="PASS" starttime="20200713 14:17:58.843" endtime="20200713 14:17:58.904"></status>
 </kw>
 <kw name="Close Session" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200713 14:17:59.214" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200713 14:17:58.905" endtime="20200713 14:17:59.214"></status>
+</kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200713 14:10:31.968" endtime="20200713 14:10:32.028"></status>
+<status status="PASS" starttime="20200713 14:17:59.214" endtime="20200713 14:17:59.280"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:31.967" endtime="20200713 14:10:32.029"></status>
+<status status="PASS" starttime="20200713 14:17:58.904" endtime="20200713 14:17:59.281"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:22.668" endtime="20200713 14:10:32.029" critical="yes"></status>
+<status status="PASS" starttime="20200713 14:17:49.922" endtime="20200713 14:17:59.281" critical="yes"></status>
 </test>
 <test id="s1-s1-t3" name="Email Não Informado">
 <kw name="Open Session" library="base" type="setup">
@@ -153,10 +163,10 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200713 14:10:32.033" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200713 14:10:32.032" endtime="20200713 14:10:33.616"></status>
+<msg timestamp="20200713 14:17:59.288" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200713 14:17:59.287" endtime="20200713 14:18:00.925"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:32.032" endtime="20200713 14:10:33.617"></status>
+<status status="PASS" starttime="20200713 14:17:59.286" endtime="20200713 14:18:00.926"></status>
 </kw>
 <kw name="Dado que acesso a página principal" library="kws">
 <kw name="Go To" library="SeleniumLibrary">
@@ -164,10 +174,10 @@
 <arguments>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:33.618" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
-<status status="PASS" starttime="20200713 14:10:33.618" endtime="20200713 14:10:36.085"></status>
+<msg timestamp="20200713 14:18:00.928" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
+<status status="PASS" starttime="20200713 14:18:00.927" endtime="20200713 14:18:02.979"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:33.617" endtime="20200713 14:10:36.087"></status>
+<status status="PASS" starttime="20200713 14:18:00.927" endtime="20200713 14:18:02.982"></status>
 </kw>
 <kw name="Quando submeto o meu email &quot;${EMPTY}&quot;" library="kws">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -176,26 +186,26 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:36.096" level="INFO">Typing text '' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20200713 14:10:36.093" endtime="20200713 14:10:36.276"></status>
+<msg timestamp="20200713 14:18:02.991" level="INFO">Typing text '' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200713 14:18:02.988" endtime="20200713 14:18:03.173"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BOTAO_ENTRAR}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:36.276" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
-<status status="PASS" starttime="20200713 14:10:36.276" endtime="20200713 14:10:36.357"></status>
+<msg timestamp="20200713 14:18:03.175" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
+<status status="PASS" starttime="20200713 14:18:03.174" endtime="20200713 14:18:03.257"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200713 14:10:41.358" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200713 14:10:36.357" endtime="20200713 14:10:41.359"></status>
+<msg timestamp="20200713 14:18:08.258" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200713 14:18:03.257" endtime="20200713 14:18:08.258"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:36.089" endtime="20200713 14:10:41.359"></status>
+<status status="PASS" starttime="20200713 14:18:02.984" endtime="20200713 14:18:08.259"></status>
 </kw>
 <kw name="Então devo ver a mensagem &quot;Oops. Informe um email válido!&quot;" library="kws">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -204,21 +214,26 @@
 <arg>${DIV_ALERT}</arg>
 <arg>${expect_message}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 14:10:41.361" endtime="20200713 14:10:41.410"></status>
+<status status="PASS" starttime="20200713 14:18:08.261" endtime="20200713 14:18:08.300"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:41.360" endtime="20200713 14:10:41.410"></status>
+<status status="PASS" starttime="20200713 14:18:08.260" endtime="20200713 14:18:08.300"></status>
 </kw>
 <kw name="Close Session" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200713 14:18:08.614" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200713 14:18:08.301" endtime="20200713 14:18:08.615"></status>
+</kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200713 14:10:41.412" endtime="20200713 14:10:41.473"></status>
+<status status="PASS" starttime="20200713 14:18:08.615" endtime="20200713 14:18:08.682"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:41.411" endtime="20200713 14:10:41.474"></status>
+<status status="PASS" starttime="20200713 14:18:08.301" endtime="20200713 14:18:08.682"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:32.030" endtime="20200713 14:10:41.475" critical="yes"></status>
+<status status="PASS" starttime="20200713 14:17:59.283" endtime="20200713 14:18:08.683" critical="yes"></status>
 </test>
 <doc>Suites dos testes de cadastro</doc>
-<status status="PASS" starttime="20200713 14:10:12.815" endtime="20200713 14:10:41.479"></status>
+<status status="PASS" starttime="20200713 14:17:40.038" endtime="20200713 14:18:08.687"></status>
 </suite>
 <suite id="s1-s2" name="Produtos" source="/home/wendy/Área de Trabalho/JavaScript/RoboWeek 2a Edição/NinjaChef/tests/produtos.robot">
 <test id="s1-s2-t1" name="Novo prato">
@@ -233,18 +248,18 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200713 14:10:41.497" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200713 14:10:41.496" endtime="20200713 14:10:43.106"></status>
+<msg timestamp="20200713 14:18:08.706" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200713 14:18:08.705" endtime="20200713 14:18:10.316"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:41.496" endtime="20200713 14:10:43.106"></status>
+<status status="PASS" starttime="20200713 14:18:08.705" endtime="20200713 14:18:10.317"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:43.107" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
-<status status="PASS" starttime="20200713 14:10:43.107" endtime="20200713 14:10:45.280"></status>
+<msg timestamp="20200713 14:18:10.319" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
+<status status="PASS" starttime="20200713 14:18:10.318" endtime="20200713 14:18:12.767"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -252,25 +267,25 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:45.282" level="INFO">Typing text 'wendyufpb@gmail.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20200713 14:10:45.280" endtime="20200713 14:10:45.562"></status>
+<msg timestamp="20200713 14:18:12.768" level="INFO">Typing text 'wendyufpb@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200713 14:18:12.768" endtime="20200713 14:18:13.043"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BOTAO_ENTRAR}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:45.562" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
-<status status="PASS" starttime="20200713 14:10:45.562" endtime="20200713 14:10:45.641"></status>
+<msg timestamp="20200713 14:18:13.044" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
+<status status="PASS" starttime="20200713 14:18:13.043" endtime="20200713 14:18:13.121"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>${DIV_DASH}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 14:10:45.641" endtime="20200713 14:10:46.096"></status>
+<status status="PASS" starttime="20200713 14:18:13.121" endtime="20200713 14:18:13.598"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:41.495" endtime="20200713 14:10:46.096"></status>
+<status status="PASS" starttime="20200713 14:18:08.704" endtime="20200713 14:18:13.598"></status>
 </kw>
 <kw name="Dado que &quot;&amp;{nhoque}&quot; é um dos meus pratos" library="kws">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -278,10 +293,10 @@
 <arguments>
 <arg>${produto}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:46.098" level="INFO">${produto} = {'img': 'nhoque.jpg', 'nome': 'Nnhoque molho páprica', 'tipo': 'Massas', 'preco': '20.00'}</msg>
-<status status="PASS" starttime="20200713 14:10:46.098" endtime="20200713 14:10:46.098"></status>
+<msg timestamp="20200713 14:18:13.603" level="INFO">${produto} = {'img': 'nhoque.jpg', 'nome': 'Nnhoque molho páprica', 'tipo': 'Massas', 'preco': '20.00'}</msg>
+<status status="PASS" starttime="20200713 14:18:13.601" endtime="20200713 14:18:13.603"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:46.097" endtime="20200713 14:10:46.098"></status>
+<status status="PASS" starttime="20200713 14:18:13.599" endtime="20200713 14:18:13.604"></status>
 </kw>
 <kw name="Quando faço o cadastro desse item" library="kws">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -290,15 +305,15 @@
 <arg>${BOTAO_ADD}</arg>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200713 14:10:46.099" endtime="20200713 14:10:46.636"></status>
+<status status="PASS" starttime="20200713 14:18:13.606" endtime="20200713 14:18:13.878"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BOTAO_ADD}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:46.638" level="INFO">Clicking element 'class:btn-add'.</msg>
-<status status="PASS" starttime="20200713 14:10:46.636" endtime="20200713 14:10:46.724"></status>
+<msg timestamp="20200713 14:18:13.879" level="INFO">Clicking element 'class:btn-add'.</msg>
+<status status="PASS" starttime="20200713 14:18:13.878" endtime="20200713 14:18:13.967"></status>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
@@ -306,8 +321,8 @@
 <arg>${CAMPO_FOTO}</arg>
 <arg>${EXECDIR}/resources/images/${produto['img']}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:46.727" level="INFO">Sending /home/wendy/Área de Trabalho/JavaScript/RoboWeek 2a Edição/NinjaChef/resources/images/nhoque.jpg to browser.</msg>
-<status status="PASS" starttime="20200713 14:10:46.725" endtime="20200713 14:10:46.792"></status>
+<msg timestamp="20200713 14:18:13.969" level="INFO">Sending /home/wendy/Área de Trabalho/JavaScript/RoboWeek 2a Edição/NinjaChef/resources/images/nhoque.jpg to browser.</msg>
+<status status="PASS" starttime="20200713 14:18:13.967" endtime="20200713 14:18:14.039"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -315,8 +330,8 @@
 <arg>${CAMPO_NOME}</arg>
 <arg>${produto['nome']}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:46.793" level="INFO">Typing text 'Nnhoque molho páprica' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20200713 14:10:46.792" endtime="20200713 14:10:47.025"></status>
+<msg timestamp="20200713 14:18:14.040" level="INFO">Typing text 'Nnhoque molho páprica' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20200713 14:18:14.039" endtime="20200713 14:18:14.270"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -324,8 +339,8 @@
 <arg>${CAMPO_TIPO}</arg>
 <arg>${produto['tipo']}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:47.026" level="INFO">Typing text 'Massas' into text field 'id:plate'.</msg>
-<status status="PASS" starttime="20200713 14:10:47.025" endtime="20200713 14:10:47.170"></status>
+<msg timestamp="20200713 14:18:14.271" level="INFO">Typing text 'Massas' into text field 'id:plate'.</msg>
+<status status="PASS" starttime="20200713 14:18:14.270" endtime="20200713 14:18:14.425"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -333,26 +348,26 @@
 <arg>${CAMPO_PRECO}</arg>
 <arg>${produto['preco']}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:47.171" level="INFO">Typing text '20.00' into text field 'id:price'.</msg>
-<status status="PASS" starttime="20200713 14:10:47.170" endtime="20200713 14:10:47.318"></status>
+<msg timestamp="20200713 14:18:14.426" level="INFO">Typing text '20.00' into text field 'id:price'.</msg>
+<status status="PASS" starttime="20200713 14:18:14.425" endtime="20200713 14:18:14.568"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200713 14:10:57.319" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200713 14:10:47.318" endtime="20200713 14:10:57.319"></status>
+<msg timestamp="20200713 14:18:24.569" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200713 14:18:14.568" endtime="20200713 14:18:24.570"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BOTAO_CADASTRAR}</arg>
 </arguments>
-<msg timestamp="20200713 14:10:57.321" level="INFO">Clicking element 'class:btn-cadastrar'.</msg>
-<status status="PASS" starttime="20200713 14:10:57.320" endtime="20200713 14:10:57.410"></status>
+<msg timestamp="20200713 14:18:24.571" level="INFO">Clicking element 'class:btn-cadastrar'.</msg>
+<status status="PASS" starttime="20200713 14:18:24.570" endtime="20200713 14:18:24.683"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:46.099" endtime="20200713 14:10:57.411"></status>
+<status status="PASS" starttime="20200713 14:18:13.604" endtime="20200713 14:18:24.683"></status>
 </kw>
 <kw name="Então devo ver este prato no meu dashboard" library="kws">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -361,26 +376,31 @@
 <arg>${DIV_LISTA}</arg>
 <arg>${produto['nome']}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 14:10:57.412" endtime="20200713 14:10:58.596"></status>
+<status status="PASS" starttime="20200713 14:18:24.684" endtime="20200713 14:18:26.156"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:57.411" endtime="20200713 14:10:58.597"></status>
+<status status="PASS" starttime="20200713 14:18:24.684" endtime="20200713 14:18:26.156"></status>
 </kw>
 <kw name="Close Session" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200713 14:18:26.442" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200713 14:18:26.157" endtime="20200713 14:18:26.442"></status>
+</kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200713 14:10:58.598" endtime="20200713 14:10:58.662"></status>
+<status status="PASS" starttime="20200713 14:18:26.442" endtime="20200713 14:18:26.504"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:58.597" endtime="20200713 14:10:58.662"></status>
+<status status="PASS" starttime="20200713 14:18:26.156" endtime="20200713 14:18:26.505"></status>
 </kw>
-<status status="PASS" starttime="20200713 14:10:41.494" endtime="20200713 14:10:58.662" critical="yes"></status>
+<status status="PASS" starttime="20200713 14:18:08.703" endtime="20200713 14:18:26.505" critical="yes"></status>
 </test>
 <doc>Cadastro de produtos/pratos
 Sendo um cozinheiro amador
 Quero cadastrar meus melhores pratos
 Para que eu possa cozinha-los para outras pessoas</doc>
-<status status="PASS" starttime="20200713 14:10:41.485" endtime="20200713 14:10:58.663"></status>
+<status status="PASS" starttime="20200713 14:18:08.694" endtime="20200713 14:18:26.507"></status>
 </suite>
-<status status="PASS" starttime="20200713 14:10:12.785" endtime="20200713 14:10:58.666"></status>
+<status status="PASS" starttime="20200713 14:17:40.002" endtime="20200713 14:18:26.519"></status>
 </suite>
 <statistics>
 <total>

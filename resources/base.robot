@@ -16,4 +16,5 @@ Open Session
     Open Browser    about:blank     chrome
 
 Close Session
+    Capture Page Screenshot
     Close Browser

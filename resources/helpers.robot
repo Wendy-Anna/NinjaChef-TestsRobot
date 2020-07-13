@@ -7,9 +7,9 @@ Login Session
 
     base.Open Session
 
-    Go To       http://ninjachef-qaninja-io.umbler.net/
+    Go To       ${base_url} 
     
-    Input Text      id:email    ${email}
-    Click Element   css:button[type=submit]
+    Input Text      ${CAMPO_EMAIL}    ${email}
+    Click Element   ${BOTAO_ENTRAR}
     
-    Wait Until Page Contains Element     class:dashboard
+    Wait Until Page Contains Element     ${DIV_DASH}
